@@ -1,0 +1,36 @@
+main {
+  background-color: black;
+}
+
+.carousel__imageholder {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: black;
+  max-height: calc(100vh - 30px);
+}
+
+.carousel__imageholder:before {
+  padding-top: 100%;
+  content: "";
+  display: block;
+}
+
+.carousel-indicators {
+  margin-bottom: 0px;
+  bottom: -15px;
+}
+
+.grid__imageholder {
+  min-height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 992px) {
+  .grid__imageholder {
+    min-height: 400px;
+  }
+}
